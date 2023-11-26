@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: goldenrod;
+}
+
+/*nav-bar styling*/
+
+nav{
+    background-color: darkslategrey;
+    color:whitesmoke
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px;
+
+}
+
+.search-container input button {
+    padding: 5px 10px;
+    border: none;
+    font-size: 18px;
+}
+
+.search-container input{
+    border-radius: 3px 0 0 3px;
+}
+
+.search-container button{
+    border-radius: 0 3px 3px 0;
+    background-color: burlywood;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.search-container button:hover{
+    background-color: blanchedalmond;
+}
+
+/* main movie section styling */
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-block: 40px;
+}
+
+main{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.movie-container{
+    display: flex;
+    justify-content: flex-start;
+    background-color:moccasin;
+    box-shadow: 0px 0px 10px #ccc;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.movie-poster img{
+    height: 450px;
+    margin-right: 30px;
+    border-radius: 5px 0 0 5px;
+}
+
+.movie-info{
+    padding-inline: 15px;
+}
+.movie-info h2{
+    text-align: center;
+    font-size: 34px;
+    margin: 20px 0 12px 0 ;
+}
+
+.movie-info h2+p{
+    text-align:center;
+}
+.movie-info .movie-genre{
+    display: flex;
+    justify-content: center;
+    margin-block: 7px;
+    overflow-x: auto ;
+}
+.movie-info .movie-genre p{
+    background-color: darkslategray;
+    color:whitesmoke;
+    padding:5px 15px;
+    margin-inline: 5px;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.movie-info p{
+    font-size: 20px;
+    margin-block: 18px;
+    line-height: 24px;
+}
+.movie-container .noBackground{
+    background: none;
+    box-shadow: none;
+}
+/*footer styling*/
+footer{
+    text-align: center;
+    background-color: darkslategray;
+    color: whitesmoke;
+    padding-block: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+
+}
+/*responsive */
+@media screen and (max-width:950px) {
+    .movie-container{
+        flex-direction: column;
+    }
+    .movie-poster img {
+        width : 100%;
+        height: fit-content;
+        margin-right:0;
+    }
+    movie-info{
+        padding-inline: 30px;
+    }
+    
+}
+@media screen and (max-width:630px){
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
